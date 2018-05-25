@@ -97,6 +97,7 @@ setup(
     tests_require=test_requirements,
     extras_require={
         'security': ['pyOpenSSL>=0.14', 'cryptography>=1.3.4', 'idna>=2.0.0'],
+        'security:python_version == "2.6"': ['pyOpenSSL>=0.14,<18.0.0', 'cryptography>=1.3.4', 'idna>=2.0.0'],
         'socks': ['PySocks>=1.5.6, !=1.5.7'],
         'socks:sys_platform == "win32" and (python_version == "2.7" or python_version == "2.6")': ['win_inet_pton'],
     },
